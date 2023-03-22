@@ -1,9 +1,12 @@
 <?php 
+
+
+        echo"PAGE SALVAR";
+
     switch($_REQUEST ["acao"]){ //recebe ações enviadas
         case "cadastrar":
 
-            //recepção dos dados com variáveis 
-
+            //recepção dos dados com variáveis  
             $nome = $_POST ["nome"];
             $data_nasc = $_POST ["data_nasc"];
             $CPF = $_POST ["CPF"];
@@ -19,6 +22,15 @@
             //variavel de resultado que passa pela conexão (config.php)
             $res = $conn -> query($sql);
 
+            if ($conn->query($sql) === TRUE) {
+                echo "Dados inseridos com sucesso!";
+              } else {
+                echo "Erro ao inserir dados: " . $conn->error;
+              }
+              
+              // Fecha a conexão com o banco de dados
+              $conn->close();
+            
             break;
 
         case "editar":

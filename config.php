@@ -10,7 +10,7 @@
     if ($conn->connect_error) {
         echo "Falha na conexão com o banco de dados: "  ;
     } else{
-        echo "ok!" ;
+        echo "ok TA FUNCIONANDO AQUI NO CONFIG.PHP!" ;
     }
 
 ?>
