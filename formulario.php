@@ -15,7 +15,7 @@
             <fieldset class="group">
                 <div class="camp">
                     <label >Nome</label>
-                    <input type="text" name="nome" class="input-form" required>
+                    <input type="varchar" name="nome" class="input-form" required>
                 </div>
     
                 <div class="camp">
