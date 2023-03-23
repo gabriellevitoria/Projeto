@@ -14,13 +14,12 @@
     <header>
         <nav>
             <div class="pesquisar">
-                <input type="text" name="pesquisar" id="idpesquisar" placeholder="Pesquisar">
+                <input type="text" name="pesquisar" id="indexpesquisar" placeholder="Pesquisar">
                 <label for="search"></label>
                 <button type="submit" class="button"><img src="pesquisa.svg" width="20" height="20" alt=""></button>
-            </div>
-            
 
-            <ul class="navlist">
+
+                <ul class="navlist">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="formulario.php?page=novo">Novo Cliente</a></li>
                 <li><a href= "ordenar-usuario.php? page = listar">Listar Usuários</a></li>
@@ -28,6 +27,10 @@
                        
             </ul>
 
+            </div>
+            
+
+            
         </nav>
         
         <div class="Container">
@@ -51,10 +54,12 @@
                             break;
     
                         default:
-                        print "Seja bem vindo!";
+                            $mensagem = "Seja bem vindo!";
+                            echo "<p class='mensagem'>$mensagem</p>";
                 }
                 } else{
-                    print "Seja bem vindo";
+                    $mensagem = "Seja bem vindo!";
+                     echo "<p class='mensagem'>$mensagem</p>";
                 }
             ?>
         </div> 

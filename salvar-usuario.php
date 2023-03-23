@@ -43,10 +43,15 @@ try {
             //variavel de resultado que passa pela conexão (config.php)
 
             if ($conn->query($sql)) {
-                echo "Dados inseridos com sucesso!";
+                print "<script>alert('Dados inseridos com sucesso!');</script>";
+                print "<script>location.href = 'index.php';</script>";
+                
             } else {
-                echo "Erro ao inserir dados: " . $conn->error;
+                print "<script>alert('Não foi possível adicionar as informações');</script>";
+                print "<script>location.href = 'index.php';</script>";
             }
+
+
 
             // Fecha a conexão com o banco de dados
             $conn->close();
