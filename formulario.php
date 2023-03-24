@@ -64,7 +64,7 @@
     
             </fieldset>
 
-            <button class="button_forms" type="submit">Cadastrar</button>
+            <button class="button" type="submit">Cadastrar</button>
 
         </form>
 

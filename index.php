@@ -28,9 +28,7 @@
             </ul>
 
             </div>
-            
-
-            
+                        
         </nav>
         
         <div class="Container">
@@ -52,52 +50,25 @@
                         case "salvar":
                             include("salvar-usuário.php");
                             break;
+                        
+                        case "editar";
+                            include ("");
+                            break;
     
                         default:
                             $mensagem = "Seja bem vindo!";
-                            echo "<p class='mensagem'>$mensagem</p>";
+                            echo "<h1 class='mensagem'>$mensagem</h1>";
                 }
                 } else{
                     $mensagem = "Seja bem vindo!";
-                     echo "<p class='mensagem'>$mensagem</p>";
+                     echo "<h1 class='mensagem'>$mensagem</h1>";
                 }
             ?>
         </div> 
-             
 
-        <section>
 
-            <table id="clients">
-                <tr>
-                    <th>Nome</th>
-                    <th>Data de Nascimento</th>
-                    <th>CPF</th>
-                    <th>Celular</th>
-                    <th>E-mail</th>
-                    <th>Endereço</th>
-                    <th>Observação</th>
-                </tr>
-
-                <tr>
-                    <td>Gabrielle</td>
-                    <td>29/10/2002</td>
-                    <td>455.639.108.30</td>
-                    <td>(17) 99603-9238</td>
-                    <td>gabrielle.912@gmail.com</td>
-                    <td>Major Antenor Ramos, 165, Bálsamo-SP</td>
-                    <td></td>
-                </tr>
-
-            </table>
+        <img class="boas-vindas" src="undraw_hello_re_3evm.svg" alt="imagem boas vindas">
             
-
-
-
-
-            
-
-
-        </section>
 
     </header>
 
