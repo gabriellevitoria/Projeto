@@ -8,65 +8,62 @@
     <title>Novo Cadastro</title>
 </head>
 <body>
-    
-    <h1 class= titulo>Novo Cadastro</h1> <br>
-
-         <form action="salvar-usuario.php?page=salvar" method="POST">
-            <input type="hidden" name="acao" value="cadastrar"> <!--ação  cadastrar enviada de forma oculta para o switch -->
+<div class="container">
+     <div class="image">
+        <img src="undraw_my_password_re_ydq7(1).svg" alt="">
+    </div>
             
-            
-            <fieldset class="group">
-
-                <div class="campo-esquerdo">
-
-                    <div class="camp">
-                        <label >Nome</label>
-                        <input type="varchar" name="nome" class="input-form" required>
-                    </div>
-
-                    <div class="camp">
-                        <label>Nascimento</label>
-                        <input  type="date" name="data_nasc" class="input-form" width="100px" required>
-                    </div>
-
-                    <div class="camp">
-                        <label>E-mail</label>
-                        <input type="text" name="email" class="input-form"  required >  
-                    </div>
+    <div class="formulario">
+        <div class="header">
+            <div class="title">
+                <h1>Novo Cadastro</h1> 
+             </div>
+        </div>
+        <form action="salvar-usuario.php?page=salvar" method="POST">
+        <input type="hidden" name="acao" value="cadastrar"> <!--ação  cadastrar enviada de forma oculta para o switch -->
                     
-                    <div class="camp">
-                        <label >CPF</label>
-                        <input type="number" name="CPF" class="input-form" require>
-                    </div>
+            <div class="input">
+                <div class="input-box">
+                    <label for="firtsname">Nome</label> <br>
+                    <input id="firtsname" type="text" name="nome" placeholder="Digite o nome do cliente"  required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="data_nasc">Nascimento</label>
+                    <input id="data_nasc"type="date" name="data_nasc" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="email">E-mail</label> <br>
+                    <input id="email" type="text" name="email" placeholder="Digite o email do cliente"  required>
                 </div>
 
-                <div class="campo-direito">
-                    
-                    <div class="camp">
-                        <label>Celular</label>
-                        <input type="number" name="celular" class="input-form" required >
-                    </div>
-    
-    
-                    <div class="camp">
-                        <label>Endereço</label>
-                        <input  type="text" name="endereco" class="input-form"  required >
-                    </div>
-    
-                    <div class="camp">
-                        <label>Observação</label>
-                        <input  type="text" name="observacap" class="input-form" >
-                        
-                    </div>
 
-                </div>   
-            
-    
-            </fieldset>
+                <div class="input-box">
+                    <label for="CPF" >CPF</label>
+                    <input id="CPF"type="number" name="CPF" placeholder="Digite o CPF do cliente" require>
+                </div>
 
-            <button class="button" type="submit">Cadastrar</button>
+                <div class="input-box">
+                    <label for="celular">Celular</label>
+                    <input id="celular"type="number" name="celular" placeholder="Digite o celular do cliente" required >
+                </div>
 
+                <div class="input-box">
+                    <label for="endereco">Endereço</label>
+                    <input id="endereco "type="text" name="endereco" placeholder="Digite o endereço do cliente"  required >  
+                </div>
+
+                <div class="input-box">
+                    <label for="observacao">Observação</label>
+                    <input id="observacao" type="text" name="observacao" placeholder="Observação" >
+                </div>
+
+            </div>
+                <button class="button" type="submit">Cadastrar</button>
+            </div>
         </form>
+    </div>
 
 </body>
 </html>

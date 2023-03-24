@@ -1,5 +1,13 @@
 <link rel="stylesheet" href="estilo-ordenar.css">
-<h1 class="titulo">Listar Usuários</h1>
+<form method="POST" action="busca.php">
+    <div class="box-search">
+        <input type="search"  class="pesquisar-form "name="pesquisar" placeholder="Pesquisar" id="pesquisar">
+        <button onclick="searchData()" type="submit" class="button-pesquisa">
+            <img src="pesquisa.svg" width="20" height="20" alt="">
+        </button>
+    </div>
+</form>
+
 
 <?php 
 
@@ -63,3 +71,4 @@ if($qtd > 0){ //maior que 0 encontra os resultados
 }
     
 ?>
+

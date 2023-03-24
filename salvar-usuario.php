@@ -104,7 +104,7 @@ try {
                 print "<script>location.href = 'index.php';</script>";
             }
 
-
+       
             break;
     }
 } catch (\Throwable $t) {
