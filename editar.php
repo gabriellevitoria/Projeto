@@ -14,7 +14,7 @@ include_once("config.php");
 
 <div class="container">
     <div class="image">
-        <img src="undraw_my_password_re_ydq7(1).svg" alt="">
+        <img src="undraw_team_up_re_84ok.svg" alt="">
     </div>
             
     <div class="formulario">
@@ -30,7 +30,7 @@ include_once("config.php");
         <div class="input">
                 <div class="input-box">
                     <label for="firsname" >Nome</label> <br>
-                    <input id="firtsname" type="text" name="nome" value="<?php print $row->nome ?>"  required>
+                    <input id="firtsname" type="text" name="nome" value="<?php print $row->nome ?>"  required oninput="this.value = this.value.replace(/[^a-zA-Z0-9 \-_]/g, '')">
                 </div>
 
                 <div class="input-box">

@@ -25,7 +25,7 @@
             <div class="input">
                 <div class="input-box">
                     <label for="firtsname">Nome</label> <br>
-                    <input id="firtsname" type="text" name="nome" placeholder="Digite o nome do cliente"  required>
+                    <input id="firtsname" type="text" name="nome" placeholder="Digite o nome do cliente"  required oninput="this.value = this.value.replace(/[^a-zA-Z0-9 \-_]/g, '')">
                 </div>
                 
                 <div class="input-box">
@@ -41,7 +41,7 @@
 
                 <div class="input-box">
                     <label for="CPF" >CPF</label>
-                    <input id="CPF"type="number" name="CPF" placeholder="Digite o CPF do cliente" require>
+                    <input id="CPF"type="number" name="CPF" placeholder="Digite o CPF do cliente" require  onblur="validarCPF(this.value)">
                 </div>
 
                 <div class="input-box">
@@ -64,6 +64,8 @@
             </div>
         </form>
     </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

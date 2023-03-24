@@ -14,12 +14,13 @@
 include_once("config.php");
 $sql = "SELECT * FROM CLIENTE";
 
-$res = $conn-> query($sql); //conexão executando query
-    
+$res = $conn-> query($sql); 
+//conexão executando query
+
 $qtd = $res-> num_rows; //quantidade de resultados --> pega o número de linhas (rows) da quantidade de resultados
 
 if($qtd > 0){ //maior que 0 encontra os resultados
-
+    
     print "<table class='table'>";
     print "<tr>";
     
@@ -32,18 +33,19 @@ if($qtd > 0){ //maior que 0 encontra os resultados
     print "<th>Endereço</th>";
     print "<th>Observação</th>";
     print "<th> Ações </th>";
-
+    
     print "</tr>";
     
     /* var funciona como arrey que recebe do resultado um object que torna todos os dados retornados 
     da query  em objetos e armazena na variável. Posso trazer cada objeto apenas imprimindo ele */
-    while($row = $res-> fetch_object()){
-      
-        print "<tr>";
+    $i = 0; 
+    while($row = $res-> fetch_object()and $i < 10){
+        $data_formatada = date('d/m/Y', strtotime($row->data_nasc));
 
+        print "<tr>";
         print "<td>".$row->id."</td>";
         print "<td>".$row->nome."</td>";
-        print "<td>".$row->data_nasc."</td>";
+        print "<td>".$data_formatada."</td>";
         print "<td>".$row->email."</td>";
         print "<td>".$row->CPF."</td>";
         print "<td>".$row->celular."</td>";

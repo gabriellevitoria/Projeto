@@ -1,0 +1,72 @@
+.box-search{
+    display: flex;
+
+}
+.pesquisar-form{
+    border: 1px solid;
+    border-color: #8d8c8c;
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+    
+}
+
+.button-pesquisa{
+    border: 1px solid;
+    border-color: #8d8c8c;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left:5px;
+
+}
+
+.table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.table tr{
+    color: #2d2d2d ;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #048caa;
+    color: white;
+  }
+
+.table td, .table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+
+.table tr tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd; color: #000}
+
+.button-editar{
+    background-color: rgb(76, 197, 76);
+   
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-editar :hover{
+    background-color: rgb(9, 90, 9);
+}
+
+.button-excluir{
+    background-color: rgb(197, 76, 76);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.button-excluir :hover{
+    background-color: rgb(141, 30, 30);
+}
